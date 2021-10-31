@@ -315,7 +315,7 @@ namespace BLULagoon.Repository
 
             con1.Open();
             string sql1 = "SELECT cocktailID, cocktailName FROM Cocktail " +
-                          "WHERE cocktailName LIKE '%" + cocktailName + "%'";
+                          "WHERE cocktailName LIKE '%" + cocktailName + "%'"; 
 
             SqliteCommand command1 = new SqliteCommand(sql1, con1);
             SqliteDataReader reader1 = command1.ExecuteReader();
