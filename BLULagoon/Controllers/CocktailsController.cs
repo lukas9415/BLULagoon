@@ -18,15 +18,37 @@ namespace BLULagoon.Controllers
         }
 
         [HttpGet("byName/{cocktailName}")]
-        public List<Cocktail> GetByUserId(string cocktailName)
+        public List<Cocktail> GetByName(string cocktailName)
         {
             return CocktailRepository.GetCocktailsByName(cocktailName);
+        }
+
+        [HttpGet("Users/{userID}")]
+        public List<Cocktail> GetByUserID(int userID)
+        {
+            return CocktailRepository.GetAllCocktailsByUserID(userID);
         }
 
         [HttpGet("byIngredient/{ingredientName}")]
         public List<CocktailsByIngredients> GetCocktailsByIngredient(string ingredientName)
         {
             return CocktailRepository.GetCocktailsByIngredient(ingredientName);
+        }
+
+        [HttpPost]
+        public PostCocktail PostNewCocktail([FromBody] PostCocktail cocktail)
+        {
+            cocktailRepository.AddNewCocktail(cocktail);
+
+            return cocktail;
+        }
+
+        [HttpPost("Ingredient")]
+        public AddCocktailIngredient PostNewIngredientToCocktail([FromBody] AddCocktailIngredient addCocktailIngredient)
+        {
+            cocktailRepository.AddIngredientToCocktail(addCocktailIngredient);
+
+            return addCocktailIngredient;
         }
 
         [HttpGet("getSums")]
