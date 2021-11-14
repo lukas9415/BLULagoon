@@ -62,5 +62,13 @@ namespace BLULagoon.Controllers
         {
             return CocktailRepository.GetCocktailSumsByName(cocktailName);
         }
+
+        [HttpDelete("{cocktailID}")]
+        public List<Cocktail> Delete(int cocktailID)
+        {
+            cocktailRepository.DeleteCocktail(cocktailID);
+
+            return Get();
+        }
     }
 }

@@ -479,6 +479,24 @@ namespace BLULagoon.Repository
             con.Close();
         }
 
+        public void DeleteCocktail(int cocktailID)
+        {
+            SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");
+            con.Open();
+            string sql = "DELETE FROM CocktailIngredients WHERE CocktailID = @CocktailID;" +
+                "DELETE FROM Cocktail WHERE cocktailID = @cocktailID";
+            SqliteCommand command = new SqliteCommand(sql, con);
+            command.Parameters.AddWithValue("@CocktailID", cocktailID);
+            command.Parameters.AddWithValue("@cocktailID", cocktailID);
+
+            SqliteDataReader reader = command.ExecuteReader();
+
+            reader.Close();
+            con.Close();
+            con.Dispose();
+
+        }
+
 
     }
 }
