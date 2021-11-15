@@ -3,8 +3,15 @@ using Microsoft.Data.Sqlite;
 
 namespace BLULagoon.Repository
 {
+    /// <summary>
+    /// CocktailRepository is used for all actions that contain cocktails.
+    /// </summary>
     public class CocktailRepository
     {
+        /// <summary>
+        /// Method used to get all cocktails from the database.
+        /// </summary>
+        /// <returns>Returns a list of all cocktails</returns>
         public static List<Cocktail> GetAllCocktails()
         {
             //----- Visi ingredientai
@@ -91,7 +98,11 @@ namespace BLULagoon.Repository
             return allCocktails;
         }
 
-
+        /// <summary>
+        /// Method to get all cocktails from the database filtering by userid.
+        /// </summary>
+        /// <param name="userID">userid of whose cocktails you would want to see</param>
+        /// <returns>Returns list of all cocktails by the specified userid</returns>
         public static List<Cocktail> GetAllCocktailsByUserID(int userID)
         {
             //----- Visi ingredientai
@@ -180,7 +191,11 @@ namespace BLULagoon.Repository
         }
 
 
-
+        /// <summary>
+        /// Method to get all cocktails from the database filtering by cocktail name.
+        /// </summary>
+        /// <param name="cocktailName">name of the cocktail you would want to see</param>
+        /// <returns>Returns list of all cocktails containing the specified name</returns>
         public static List<Cocktail> GetCocktailsByName(string cocktailName)
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");
@@ -267,7 +282,11 @@ namespace BLULagoon.Repository
             return allCocktails;
         }
 
-
+        /// <summary>
+        /// Method to get all cocktails from the database containing selected ingredient.
+        /// </summary>
+        /// <param name="ingredientName">name of the ingredient in the cocktails you would want to see</param>
+        /// <returns>Returns list of all cocktails with the specified ingredient</returns>
         public static List<CocktailsByIngredients> GetCocktailsByIngredient(string ingredientName)
         {
             SqliteConnection con1 = new SqliteConnection(@"Data Source=BLULagoon.db");
@@ -300,7 +319,10 @@ namespace BLULagoon.Repository
             return cocktailsByIngredients;
         }
 
-
+        /// <summary>
+        /// Method to get all cocktail ingredients sums from the database.
+        /// </summary>
+        /// <returns>Returns list of all cocktail ingredient sums</returns>
         public static List<CocktailSum> GetCocktailSums()
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");
@@ -368,7 +390,11 @@ namespace BLULagoon.Repository
             return cocktailSums;
         }
 
-
+        /// <summary>
+        /// Method to get all cocktail ingredients sums from the database filtered by cocktail name.
+        /// <param name="cocktailName">name of the cocktail which ingredients you want to see</param>
+        /// </summary>
+        /// <returns>Returns list of all cocktail ingredient sums of the specified cocktail</returns>
         public static List<CocktailSum> GetCocktailSumsByName(string cocktailName)
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");
@@ -437,6 +463,10 @@ namespace BLULagoon.Repository
             return cocktailSums;
         }
 
+        /// <summary>
+        /// Method to add a new cocktail to the database.
+        /// <param name="cocktail">cocktail object with all the required information for adding to the database</param>
+        /// </summary>
         public void AddNewCocktail(PostCocktail cocktail)
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");
@@ -461,6 +491,10 @@ namespace BLULagoon.Repository
             con.Close();
         }
 
+        /// <summary>
+        /// Method to add a new ingredient to the cocktail.
+        /// <param name="ingredient">ingredient object with all the required information for adding to the cocktail</param>
+        /// </summary>
         public void AddIngredientToCocktail(AddCocktailIngredient ingredient)
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");
@@ -479,6 +513,10 @@ namespace BLULagoon.Repository
             con.Close();
         }
 
+        /// <summary>
+        /// Method to delete a cocktail from the database.
+        /// <param name="cocktailID">id of the cocktail which will be deleted</param>
+        /// </summary>
         public void DeleteCocktail(int cocktailID)
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");

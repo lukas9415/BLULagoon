@@ -3,8 +3,15 @@ using Microsoft.Data.Sqlite;
 
 namespace BLULagoon.Repository
 {
+    /// <summary>
+    /// IngredientRepository is used for all actions that contain ingredients.
+    /// </summary>
     public class IngredientRepository
     {
+        /// <summary>
+        /// Method to add a new ingredient to the database.
+        /// <param name="ingredientName">ingredient name which will be added to the database</param>
+        /// </summary>
         public void AddIngredient(string ingredientName)
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");
@@ -21,6 +28,10 @@ namespace BLULagoon.Repository
             con.Close();
         }
 
+        /// <summary>
+        /// Method used to get all ingredients from the database.
+        /// </summary>
+        /// <returns>Returns a list of all ingredients</returns>
         public static List<Ingredient> GetAllIngredients()
         {
             SqliteConnection con1 = new SqliteConnection(@"Data Source=BLULagoon.db");
@@ -48,6 +59,10 @@ namespace BLULagoon.Repository
             return allIngredients;
         }
 
+        /// <summary>
+        /// Method to delete an ingredient from the database.
+        /// <param name="ingredientID">id of the ingredient which will be deleted</param>
+        /// </summary>
         public void DeleteIngredient(int ingredientID)
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");
@@ -65,6 +80,11 @@ namespace BLULagoon.Repository
 
         }
 
+        /// <summary>
+        /// Method to update an ingredient name in the database.
+        /// <param name="ingredientID">id of the ingredient which will be updated</param>
+        /// <param name="ingredientName">name which will be specified for the selected id</param>
+        /// </summary>
         public void UpdateIngredient(int ingredientID, string ingredientName)
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");

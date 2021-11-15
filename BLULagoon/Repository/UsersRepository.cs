@@ -3,8 +3,15 @@ using Microsoft.Data.Sqlite;
 
 namespace BLULagoon.Repository
 {
+    /// <summary>
+    /// UsersRepository class is used for all actions with users.
+    /// </summary>
     public class UsersRepository
     {
+        /// <summary>
+        /// Method to get all users from the database.
+        /// </summary>
+        /// <returns>Returns list of all users</returns>
         public static List<User> GetAllUsers()
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");
@@ -31,6 +38,10 @@ namespace BLULagoon.Repository
             return allUsers;
         }
 
+        /// <summary>
+        /// Method to add new user to the database.
+        /// </summary>
+        /// <param name="newUser">New user object with all information that will be added</param>
         public void AddNewUser(User newUser)
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");
@@ -48,6 +59,10 @@ namespace BLULagoon.Repository
             con.Close();
         }
 
+        /// <summary>
+        /// Method to delete a user from the database by his id.
+        /// </summary>
+        /// <param name="UserID">id of the user which will be deleted</param>
         public void DeleteUser(int UserID)
         {
             SqliteConnection con = new SqliteConnection(@"Data Source=BLULagoon.db");
