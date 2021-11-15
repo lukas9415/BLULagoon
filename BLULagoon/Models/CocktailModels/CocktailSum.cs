@@ -1,5 +1,8 @@
 ﻿namespace BLULagoon.Models
 {
+    /// <summary>
+    /// Class used to get all ingredient sums.
+    /// </summary>
     public class CocktailSum
     {
         public int cocktailID { get; set; }

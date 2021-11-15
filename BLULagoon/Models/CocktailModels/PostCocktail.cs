@@ -1,5 +1,8 @@
 ﻿namespace BLULagoon.Models
 {
+    /// <summary>
+    /// Cocktail class which is used for posting.
+    /// </summary>
     public class PostCocktail
     {
         public string? cocktailName { get; set; }

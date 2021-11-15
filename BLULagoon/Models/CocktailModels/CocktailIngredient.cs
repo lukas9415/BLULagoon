@@ -1,5 +1,8 @@
 ﻿namespace BLULagoon.Models
 {
+    /// <summary>
+    /// Main cocktail ingredient class.
+    /// </summary>
     public class CocktailIngredient
     {
         public int cocktailID { get; set; }

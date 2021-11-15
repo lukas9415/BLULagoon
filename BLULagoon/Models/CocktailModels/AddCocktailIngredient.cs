@@ -1,5 +1,8 @@
 ﻿namespace BLULagoon.Models
 {
+    /// <summary>
+    /// Class used for adding ingredient to the cocktail.
+    /// </summary>
     public class AddCocktailIngredient
     {
         public int cocktailID { get; set; }
