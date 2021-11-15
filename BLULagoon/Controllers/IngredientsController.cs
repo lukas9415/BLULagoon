@@ -45,7 +45,7 @@ namespace BLULagoon.Controllers
         /// <summary>
         /// Request to delete an ingredient from the database.
         /// 
-        /// <c>DELETE: BLULagoon/Ingredients</c>
+        /// <c>DELETE: BLULagoon/Ingredients/{ingredientID}</c>
         /// </summary>
         /// <param name="ingredientID">ingredientID which comes from the request</param>
         /// <returns>Returns all ingredients after deletion</returns>

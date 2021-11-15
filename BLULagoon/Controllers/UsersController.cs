@@ -44,7 +44,7 @@ namespace BLULagoon.Controllers
         /// <summary>
         /// Request to delete a user from the database.
         /// 
-        /// <c>DELETE: BLULagoon/Users/{cryptoId}</c>
+        /// <c>DELETE: BLULagoon/Users/{userid}</c>
         /// </summary>
         /// <param name="userid">userid which comes from the request</param>
         /// <returns>Returns all users after deletion</returns>

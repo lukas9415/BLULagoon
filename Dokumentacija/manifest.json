@@ -1,0 +1,342 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Lukas/source/repos/lukas9415/BLULagoon/BLULagoon",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Controllers.CocktailsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Controllers.CocktailsController.html",
+          "hash": "heMvWzv8BEzYPc2x6VBBVKIjt03VNc6Exyn+iGw+S/k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Controllers.IngredientsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Controllers.IngredientsController.html",
+          "hash": "Ve7X3b0B+agRZNBFZvsyobIhA8VxDFRMKPbn9XSCSWY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Controllers.UsersController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Controllers.UsersController.html",
+          "hash": "ylZU2rnsQcSnt3ZceNoWzgI+VK9C4Bwe0Qi0Cap8/Og="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Controllers.html",
+          "hash": "0gX2Zz+GvuRs+ZiXGKte5fflYo4BFWa4GgGAHBdmmdg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Models.AddCocktailIngredient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Models.AddCocktailIngredient.html",
+          "hash": "YeRqj6tLbAAUIlAduuHUqzLLKJ8ZsbnnGiIv1R8LHls="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Models.Cocktail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Models.Cocktail.html",
+          "hash": "nlvmPtEj7Z+O0H7N7Ywm6GYxLhMKJNkxtUaKPrvfYXU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Models.CocktailIngredient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Models.CocktailIngredient.html",
+          "hash": "6t/3WX0K0jziGwl6Ypsc+6u8bbtSQEGkknnFaeRdj44="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Models.CocktailIngredientNoID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Models.CocktailIngredientNoID.html",
+          "hash": "lkdfrKdG1OMf6kjsOgPKWloIaim2d3zjstDcuUPnJ64="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Models.CocktailSum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Models.CocktailSum.html",
+          "hash": "4Hsf2ck+AZj8cqCN6TS1Jc1vTDvutsXhsrQan4Fi3Ho="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Models.CocktailsByIngredients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Models.CocktailsByIngredients.html",
+          "hash": "21/uCW6aPZd7ovwUWUgFfcehccGUTdXnJ0FE8D+aJzQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Models.Ingredient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Models.Ingredient.html",
+          "hash": "b+Em7X+/WDoswVPBPtfDAux8+UhRuhoyrbWOnOJj66k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Models.PostCocktail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Models.PostCocktail.html",
+          "hash": "gvpTbALV8xjBQgOGg2QfXpxHbzTrNhKa0EWH3ecNpkg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Models.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Models.User.html",
+          "hash": "T162bgsMjI+7ohjKsQykNfor2oKa+RGRiFKqqEkOBIA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Models.html",
+          "hash": "/bls654ld4MzjU2ztlejrY3NxfZU6/5cCDr25zYi43o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Repository.CocktailRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Repository.CocktailRepository.html",
+          "hash": "tBVS4DR9FYJ/0mZGEsa7LmNAITanySrPfgbHCxjxm9w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Repository.IngredientRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Repository.IngredientRepository.html",
+          "hash": "+d56exsa7BFEWbuZ85iQCcP/QbX9rG///6aKdKvZdKQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Repository.UsersRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Repository.UsersRepository.html",
+          "hash": "J3SqdDJmR3rmnYQUNQbiRfJPZDQjufoN07bxdPNGiUM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BLULagoon.Repository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BLULagoon.Repository.html",
+          "hash": "vduw9JTHdUQKXszUJrgDl2KGp1evQvDcXGY3P3ywzsc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "Fsnls7JiKu7fNllDfNYAO+ZGlXlnwjuoXxtQcfnEHr8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "wd531uP7rSZzNAlRr6cXuoTglhw6E9QrxLzmmo7vlOo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "J16tPljbCW5UQZHXkCSKEgj/ndCORtU7lIyC3KiEN9I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "1yxUXNNDa4gIzbXwZEyUZPt5S0KG3EB0RNY8tx60ddU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 18,
+          "skipped_file_count": 15
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

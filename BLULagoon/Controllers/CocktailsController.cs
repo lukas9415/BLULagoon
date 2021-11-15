@@ -29,7 +29,7 @@ namespace BLULagoon.Controllers
         /// <summary>
         /// Request to get cocktails from the database by their name.
         /// 
-        /// <c>GET: BLULagoon/Cocktails</c>
+        /// <c>GET: BLULagoon/Cocktails/byName/{cocktailName}</c>
         /// <param name="cocktailName">Cocktail name which will be searched for</param>
         /// </summary>
         /// <returns>Returns all cocktails with selected name</returns>
@@ -42,7 +42,7 @@ namespace BLULagoon.Controllers
         /// <summary>
         /// Request to get cocktails from the database by userID
         /// 
-        /// <c>GET: BLULagoon/Cocktails</c>
+        /// <c>GET: BLULagoon/Cocktails/Users/{userID}</c>
         /// <param name="userID">userID which comes from the request</param>
         /// </summary>
         /// <returns>Returns all cocktails from the selected userID</returns>
@@ -56,7 +56,7 @@ namespace BLULagoon.Controllers
         /// <summary>
         /// Request to get cocktails from the database by their ingredient
         /// 
-        /// <c>GET: BLULagoon/Cocktails</c>
+        /// <c>GET: BLULagoon/Cocktails/byIngredient/{ingredientName}</c>
         /// <param name="ingredientName">ingredientName which comes from the request</param>
         /// </summary>
         /// <returns>Returns all cocktails with the selected ingredient</returns>
@@ -84,7 +84,7 @@ namespace BLULagoon.Controllers
         /// <summary>
         /// Request to add a new ingredient to the cocktail
         /// 
-        /// <c>POST: BLULagoon/Cocktails</c>
+        /// <c>POST: BLULagoon/Cocktails/Ingredient</c>
         /// <param name="addCocktailIngredient">cocktail ingredient object with all the required information for adding</param>
         /// </summary>
         /// <returns>Returns the added cocktail ingredient object</returns>
@@ -99,7 +99,7 @@ namespace BLULagoon.Controllers
         /// <summary>
         /// Request to get all cocktail ingredient sums
         /// 
-        /// <c>GET: BLULagoon/Cocktails</c>
+        /// <c>GET: BLULagoon/Cocktails/getSums</c>
         /// </summary>
         /// <returns>Returns cocktail ingredient sums</returns>
         [HttpGet("getSums")]
@@ -111,7 +111,7 @@ namespace BLULagoon.Controllers
         /// <summary>
         /// Request to get cocktail ingredient sum by cocktail name
         /// 
-        /// <c>GET: BLULagoon/Cocktails</c>
+        /// <c>GET: BLULagoon/Cocktails/getSums/{cocktailName}</c>
         /// <param name="cocktailName">cocktail name which comes from the request used for searching</param>
         /// </summary>
         /// <returns>Returns the selected cocktail ingredient sum</returns>
@@ -124,7 +124,7 @@ namespace BLULagoon.Controllers
         /// <summary>
         /// Request to delete a cocktail from the database
         /// 
-        /// <c>DELETE: BLULagoon/Cocktails</c>
+        /// <c>DELETE: BLULagoon/Cocktails/{cocktailID}</c>
         /// <param name="cocktailID">cocktailID which will be deleted</param>
         /// </summary>
         /// <returns>Returns all cocktails without the deleted one</returns>
